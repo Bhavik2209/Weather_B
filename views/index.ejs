@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="/styles/1.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <section class="main">
+      <form class="/" method="post">
+        <section class="inputs">
+          <input type="text" name="cityName" class="form-control top" id="cityInput" placeholder="City name" autocomplete="off" required autofocus>
+          <button  type="submit" value="submit" name="button">Search</button>
+          </section>
+        </form>
+        <section class="display">
+          <div class="wrapper">
+              <h2 id="cityoutput">Weather Conditions</h2>
+              <div class="info">
+
+                <h1 id="name">City : <%= name %></h1>
+                <h1 id="temp">Temperature : </br><%= temperature %></br></h1>
+                <h1 id="des">Description : </br><%= description %></h1>
+
+              </div>
+            </div>
+      </section>
+    </section>
+
+  </div>
+</body>
+
+</html>
